@@ -66,7 +66,7 @@ function handleConfiguration() {
 		api.init(appUrl, afterInitialized);
 		
 		function afterInitialized() {
-			$('#manager').show();
+			alert("Configured with: " + appUrl);
 		}
 	});
 }
