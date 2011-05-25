@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<style type='text/css'>
+
+	body, button {
+	    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	    font-size: 13px;
+	}
+            
+	#display {
+		width: 400px;
+		height: 150px;
+		border: 1px solid rgb(150, 150, 150);
+	}
+	
+	input {
+		padding: 2px;
+		border: 1px solid rgb(150, 150, 150);
+	}
+	
+	#manager {
+		
+	}
+</style>
+
+<script src="/dnode.js" type="text/javascript"></script>
+<script src="/jquery-1.6.1.min.js" type="text/javascript"></script>
+<script src="/main.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id='config'>
+	Appilcaton URL: 
+	<input id='appUrl' type='text' />
+	<button id='configure'>Configure</button>
+</div>
+<br>
+<div id='manager'>
+	<div id='optionView'>
+		Phone no:
+		<input type='text' id='phoneNo'/>
+		<button id='startSession'>Start Session</button>
+	</div>
+	<br>
+	<div id='sessonView'>
+		Session: 
+		<select id ='sessions'></select>
+	</div>
+	<br>
+	Display <br><br>
+	<div id="display"></div>
+	<br>
+	<div id='menuView'>
+		Answer: 
+		<input id='messageBox' type='text' />
+		<button id='send'>Send</button>
+		<button id='terminate'>Terminate Session</button>
+	</div>
+	<br>
+</div>
+
+</body>
+</html>
