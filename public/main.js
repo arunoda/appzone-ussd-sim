@@ -145,8 +145,16 @@ function receiveMessages(ussd) {
 function renderDisplay() {
 
 	if(currentSession) {
-		$('#display').text(currentSession.display);
+		$('#display').html(nlToBr(currentSession.display));
 	}
+
+	function nlToBr(str) {
+			if(typeof(str) == 'string') {
+				return str.replace(/\n/g, '<br>');
+			} else {
+				return str;
+			}
+	};
 }
 
 //sessionSwitch
